@@ -1,0 +1,19 @@
+#error {
+    color: red;
+}
+#success {
+    color: green;
+}
+body {
+    padding: 5%;
+    background: #eef7ee40;
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    margin-top: 5%;
+}
+button {
+    margin-top: 1em;
+}

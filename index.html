@@ -3,11 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
   </head>
   <body>
-    <!-- Write your markup here -->
+    <h3 class="title is-pulled-left"><i class="fas fa-coins has-text-success">&nbsp; </i></h3>
+    <h3 class="title is-pulled-right"><i class="fas fa-coins has-text-success">&nbsp; </i></h3>
+    <h1 class="title has-text-success">Change Calculator</h1>
+    <hr class="has-background-success" />
 
-    <!-- Don't forget to add your <script> tag here -->
+    <section>
+      <h4 class="title is-4">Transaction details</h4>
+      <div class="columns ">
+        <div class="column is-two-fifths">
+          <label for="amount-due">How much is due for the sale?</label>
+          <input type="number" id="amount-due" class="input is-rounded" placeholder="$0.00"/>
+        </div>
+        <div class="column is-two-fifths">
+          <label for="amount-received">How much has the customer given you?</label>
+          <input type="number" id="amount-received"  class="input is-rounded" placeholder="$0.00"/>
+        </div>
+        <div class="column is-one-fifth">
+            <button id="calculate-change" class="button is-black is-medium">Calculate</button>
+        </div>
+      </div>
+      <div id="error"></div>
+      <div id="success"></div>
+    </section>  
 
+    <section>
+      <h4 class="title is-4">Change due</h4>
+
+      <div class="columns ">
+          <div class="column is-one-fifth">
+            <p id="onehundreddollars-output">0</p>
+            <img src="images/onehundreddollars.png" id="onehundreddollarsimg" width="75">
+            <label for="onehundreddollars-output">100 Dollars</label>
+          </div>
+          <div class="column is-one-fifth">
+            <p id="fiftydollars-output">0</p>
+            <img src="images/fiftydollars.jpg" id="fiftydollarsimg" width="75">
+            <label for="fiftydollars-output">50 Dollars</label>
+        </div>
+          <div class="column is-one-fifth">
+            <p id="twentydollars-output">0</p>
+            <img src="images/twentydollars.jpg" id="twentydollarsimg" width="75">
+            <label for="twentydollars-output">20 Dollars</label>
+        </div>
+          <div class="column is-one-fifth">
+            <p id="tendollars-output">0</p>
+            <img src="images/tendollars.jpg" id="tendollarsimg" width="75">
+            <label for="tendollars-output">10 Dollars</label>
+        </div>
+          <div class="column is-one-fifth">
+            <p id="fivedollars-output">0</p>
+            <img src="images/fivedollars.jpg" id="fivedollarsimg" width="75">
+            <label for="fivedollars-output">5 Dollars</label>
+          </div>
+        </div>
+  
+
+      <div class="columns ">
+        <div class="column is-one-fifth">
+          <p id="dollars-output">0</p>
+          <img src="images/dollars.jpg" id="dollarsimg" width="75">
+          <label for="dollars-output">Dollars</label>
+        </div>
+        <div class="column is-one-fifth">
+          <p id="quarters-output">0</p>
+          <img src="images/quarters.jpg" id="quartersimg" width="50">
+          <label for="quarters-output">Quarters</label>
+      </div>
+        <div class="column is-one-fifth">
+          <p id="dimes-output">0</p>
+          <img src="images/dimes.jpg" id="dimesimg" width="50">
+          <label for="dimes-output">Dimes</label>
+      </div>
+        <div class="column is-one-fifth">
+          <p id="nickels-output">0</p>
+          <img src="images/nickels.jpg" id="nickelsimg" width="50">
+          <label for="nickels-output">Nickels</label>
+      </div>
+        <div class="column is-one-fifth">
+          <p id="pennies-output">0</p>
+          <img src="images/pennies.jpg" id="penniesimg" width="50">
+          <label for="pennies-output">Pennies</label>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
+<!-- currency images from http://clipart-library.com -->
